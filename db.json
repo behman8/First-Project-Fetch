@@ -2,7 +2,93 @@
     "Ninjas": [
         {
             "Name": "Uzumaki Naruto",
-            "Value": 15
+            "Value": 15,
+            "ID": 1
+        },
+        {
+            "Name": "Uchiha Sasuke",
+            "Value": 15,
+            "ID": 2
+        },
+        {
+            "Name": "Sakura Haruno",
+            "Value": 10,
+            "ID": 3
+        },
+        {
+            "Name": "Uchiha Madara",
+            "Value": 15,
+            "ID": 4
+        },
+        {
+            "Name": "Shino Aburame",
+            "Value": 5,
+            "ID": 5
+        },
+        {
+            "Name": "Shikamaru Nara",
+            "Value": 10,
+            "ID": 6
+        },
+        {
+            "Name": "Choji Akimichi",
+            "Value": 5,
+            "ID": 7
+        },
+        {
+            "Name": "Ino Yamanaka",
+            "Value": 5,
+            "ID": 8
+        },
+        {
+            "Name": "Asuma Sarutobi",
+            "Value": 5,
+            "ID": 9
+        },
+        {
+            "Name": "Rock Lee",
+            "Value": 10,
+            "ID": 10
+        },
+        {
+            "Name": "Gaara",
+            "Value": 10,
+            "ID": 11
+        },
+        {
+            "Name": "Kankuro",
+            "Value": 5,
+            "ID": 12
+        },
+        {
+            "Name": "Temari",
+            "Value": 5,
+            "ID": 13
+        },
+        {
+            "Name": "Might Guy",
+            "Value": 15,
+            "ID": 14
+        },
+        {
+            "Name": "Tenten",
+            "Value": 5,
+            "ID": 15
+        },
+        {
+            "Name": "Uchiha Obito",
+            "Value": 15,
+            "ID": 16
+        },
+        {
+            "Name": "Kiba Inuzuka",
+            "Value": 5,
+            "ID": 17
+        },
+        {
+            "Name": "Hinata Hyuga",
+            "Value": 5,
+            "ID": 18
         }
     ]
 }
