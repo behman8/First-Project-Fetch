@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const secondTeam = [];
     const winOrLoseButton = document.querySelector('#total-value');
     const h2 = document.querySelector('#h2');
-
+    const h2Score = document.querySelector("score-text");
+    
     function grabbingNinjas() {
         fetch(URL)
         .then(resp => resp.json())
@@ -49,8 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
     winOrLoseButton.addEventListener('click', event => {
         let clientTotal = 0;
         let enemyTotal = 0;
+        let clientScore = 0;
+        let enemyScore =0;
         firstTeam.forEach(ninja => clientTotal += ninja.Value);
         secondTeam.forEach(ninja => enemyTotal += ninja.Value);
         clientTotal > enemyTotal ? h2.innerText = 'You Win!' : h2.innerText = 'Enemy Wins!';
+        h2Score.innerText = clientScore
+        if (h2.innerText = 'You Win!') {
+            clientScore = clientScore + 1
+        } else if (h2.innerText = 'Enemy Wins!') {
+            enemyScore = enemyScore + 1
+        } else {
+
+        }
     });
 });
