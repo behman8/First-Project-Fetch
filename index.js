@@ -13,8 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const secondTeam = [];
     const winOrLoseButton = document.querySelector('#total-value');
     const h2 = document.querySelector('#h2');
-    const h2Score = document.querySelector("score-text");
-    
+    const pClientScore = document.querySelector("#client-score")
+    const pEnemyScore = document.querySelector("#enemy-score")
+    const resetTeams = document.querySelector("#team-reset")
+    let clientScore = 0;
+    let enemyScore = 0;
+
     function grabbingNinjas() {
         fetch(URL)
         .then(resp => resp.json())
@@ -47,21 +51,30 @@ document.addEventListener("DOMContentLoaded", () => {
             enemiesTeam.append(li4,li5,li6);
         });
     };
+    resetTeams.addEventListener('click', function(e) {
+        firstTeam.splice(0);
+        secondTeam.splice(0);
+        li1.innerHTML = " ";
+        li2.innerHTML = " ";
+        li3.innerHTML = " ";
+        li4.innerHTML = " ";
+        li5.innerHTML = " ";
+        li6.innerHTML = " ";
+        h2.innerHTML = " ";
+    });
     winOrLoseButton.addEventListener('click', event => {
         let clientTotal = 0;
         let enemyTotal = 0;
-        let clientScore = 0;
-        let enemyScore =0;
         firstTeam.forEach(ninja => clientTotal += ninja.Value);
         secondTeam.forEach(ninja => enemyTotal += ninja.Value);
         clientTotal > enemyTotal ? h2.innerText = 'You Win!' : h2.innerText = 'Enemy Wins!';
-        h2Score.innerText = clientScore
-        if (h2.innerText = 'You Win!') {
+        console.log(clientTotal, enemyTotal, clientTotal > enemyTotal);
+        if (h2.innerText === 'You Win!') {
             clientScore = clientScore + 1
-        } else if (h2.innerText = 'Enemy Wins!') {
-            enemyScore = enemyScore + 1
         } else {
-
-        }
+            enemyScore = enemyScore + 1
+        };
+        pClientScore.innerText = clientScore;
+        pEnemyScore.innerText = enemyScore;
     });
 });
