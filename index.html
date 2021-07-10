@@ -4,11 +4,20 @@
         <title>Ninja Team Generator</title>
         <script defer src="index.js" charset="utf-8"></script>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1>Ninja Luck</h1>
-        <ul id="clients-team"></ul>
-        <ul id="enemy-team"></ul>
+        <div id="team-headers">
+            <section>
+                <h2 id="client-header">Your Team</h2>
+                <ul id="clients-team"></ul>
+            </section>
+            <section>
+                <h2 id="enemy-header">Enemy Team</h2>
+                <ul id="enemy-team"></ul>
+            </section>
+        </div>
         <button type="button" id="team-gatherer"><strong>TEAMS!</strong></button>
         <button type="button" id="total-value"><strong>Victory or Defeat!</strong></button>
         <button type="button" id="team-reset"><strong>RESET</strong></button>

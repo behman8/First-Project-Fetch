@@ -1,0 +1,74 @@
+* {
+    font-family: 'Righteous', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff8c00;
+    background-image: url(https://variety.com/wp-content/uploads/2015/07/naruto_movie-lionsgate.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+}
+
+ul {
+    border: 5px solid white;
+    background-color: black;
+    float: left;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+#client-header {
+    position: fixed;
+    left: .4%;
+    right: 50%;
+    top: 4%;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#enemy-header {
+    position: fixed;
+    left: 50%;
+    right: .4%;
+    top: 4%;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+button {
+    width: 33.16%;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+}
+
+#h2, #score-text {
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    background-color: black;
+    font-size: 50px;
+}
+
+#client-score, #enemy-score {
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    background-color: black;
+    float: left;
+    width: 50%;
+    font-size: 50px;
+}

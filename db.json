@@ -89,6 +89,41 @@
             "Name": "Hinata Hyuga",
             "Value": 5,
             "ID": 18
+        },
+        {
+            "Name": "Uchiha Itachi",
+            "Value": 15,
+            "ID": 19
+        },
+        {
+            "Name": "Orochimaru",
+            "Value": 10,
+            "ID": 20
+        },
+        {
+            "Name": "Tsunade",
+            "Value": 10,
+            "ID": 21
+        },
+        {
+            "Name": "Neji Hyuga",
+            "Value": 5,
+            "ID": 22
+        },
+        {
+            "Name": "Sai",
+            "Value": 10,
+            "ID": 23
+        },
+        {
+            "Name": "Sarutobi Konohamaru",
+            "Value": 5,
+            "ID": 24
+        },
+        {
+            "Name": "Karin",
+            "Value": 5,
+            "ID": 25
         }
     ]
 }
