@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
         firstTeam.forEach(ninja => clientTotal += ninja.Value);
         secondTeam.forEach(ninja => enemyTotal += ninja.Value);
         clientTotal > enemyTotal ? h2.innerText = 'You Win!' : h2.innerText = 'Enemy Wins!';
-        console.log(clientTotal, enemyTotal, clientTotal > enemyTotal);
         if (h2.innerText === 'You Win!') {
             clientScore = clientScore + 1
         } else {
